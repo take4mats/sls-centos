@@ -8,7 +8,7 @@ RUN yum clean all
 RUN curl -sL https://rpm.nodesource.com/setup_8.x | bash -
 # RUN yum --showduplicate search node | grep 8.10
 RUN yum -y install 2:nodejs-8.10.0-1nodesource.x86_64
-RUN node -v
+# RUN node -v
 
 # install serverless framework
 RUN npm install -g serverless
